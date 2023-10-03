@@ -24,6 +24,7 @@ export const Navbar = () => {
         })} */}
                 <div><Link style={{textDecoration:"none"}} to="/"><b>DEV@Deakin</b></Link></div>
                 <div style={{width:"40%"}}><input style={{width:"100%",overflow:"hidden"}} placeholder='Search...'/></div>
+                <div><Link style={{textDecoration:"none"}} to="/plans">Plans</Link></div>
                 <div><Link style={{textDecoration:"none"}} to="/login">Login</Link></div>
                 <div><Link style={{textDecoration:"none"}} to="/signup">Signup</Link></div>
              {isAuth?<div><Link style={{textDecoration:"none"}} to="/logout">Signout</Link></div>:null}

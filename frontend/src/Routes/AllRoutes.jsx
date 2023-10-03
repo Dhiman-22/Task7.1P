@@ -7,6 +7,8 @@ import { LandingPage } from "../Pages/LandingPage";
 import { Home } from "../Pages/Home";
 import { PrivateRoute } from './PrivateRoute';
 import { Signout } from '../Pages/Signout';
+import { Plans } from '../Pages/Plans';
+import StripeContainer from '../components/StripeContainer';
 
 export const AllRoutes = () => {
   return (
@@ -18,6 +20,9 @@ export const AllRoutes = () => {
         <Route path="/login" element={<Login/>}/>
         <Route path="/logout" element={<Signout/>}/>
         <Route path="/notes" element={<PrivateRoute><Notes/></PrivateRoute>}/>
+        <Route path="/plans" element={<PrivateRoute><Plans/></PrivateRoute>}/>
+        <Route path="/payment" element={<PrivateRoute><StripeContainer/></PrivateRoute>}/>
+
       </Routes>
     </div>
   )
